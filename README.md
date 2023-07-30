@@ -50,3 +50,10 @@ ivan.jaraiz@gmail.com
 ## GitLab
 
 [Visita el repositorio de GitLab](https://gitlab.com/ijmGitlab)
+
+## Otros proyectos
+
+- [Jungle Adventure](https://github.com/ijmGithub/selvaAdventureGame): la emocionante aventura en la selva, donde te enfrentarás a desafíos y peligros en cada paso. Explora un mundo misterioso lleno de 
+criaturas exóticas, tesoros ocultos y emocionantes acertijos.
+- [BytesAndPuzzles](https://gitlab.com/ijmGitlab/bytesandpuzzles): Juego de Comunicaciones Juego de Comunicaciones, donde te enfrentarás a emocionantes desafíos y aventuras relacionados con los 
+protocolos de comunicación UART, SPI e I2C.
