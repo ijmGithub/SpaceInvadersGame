@@ -1,59 +1,118 @@
-# Space Invaders - Juego de Naves Espaciales en C++ y C#
+# 🚀 Space Invaders - Juego Arcade Espacial
 
 ![Logo del Juego](/images/logo.png)
 
-Space Invaders es un emocionante juego de naves espaciales inspirado en los clásicos arcade. Únete a la batalla en el espacio exterior y defiende la Tierra de la invasión alienígena.
+**Space Invaders** es un videojuego arcade inspirado en los clásicos juegos de naves espaciales, desarrollado principalmente en **C#** con enfoque en rendimiento, arquitectura modular y experiencia visual interactiva.
 
-## Características principales
+Prepárate para defender la Tierra frente a oleadas de invasores alienígenas mientras mejoras tu nave, desbloqueas nuevas armas y sobrevives en intensas batallas espaciales.
 
-- 🚀 Controla tu nave con precisión para esquivar disparos y destruir a los invasores alienígenas.
-- 💥 Derrota a diferentes tipos de enemigos con patrones de ataque únicos y desafiantes.
-- 🔧 Mejora tu nave con poderosas armas y escudos para enfrentar oleadas cada vez más difíciles de enemigos.
-- 🌌 Sumérgete en un mundo de gráficos y efectos visuales impresionantes que te transportarán al espacio exterior.
-- 🏆 Supera tus récords y compite con otros jugadores para obtener la mayor puntuación en la tabla de clasificación.
+---
 
-## Tecnologías utilizadas
+## ✨ Características Principales
 
-- 🚀 Implementado en C++ para aprovechar la eficiencia y el rendimiento cercano al hardware.
-- 💻 Utilización de C# para la creación de una interfaz gráfica y una experiencia de juego inmersiva.
-- 💾 Almacenamiento de puntuaciones y datos del jugador utilizando un archivo de texto simple.
+- 🚀 Sistema de control fluido y preciso para una experiencia arcade dinámica.
+- 👾 Enemigos con comportamientos y patrones de ataque diferenciados.
+- 💥 Sistema de disparos, colisiones y efectos visuales en tiempo real.
+- 🛡️ Mejoras progresivas de armas, escudos y habilidades especiales.
+- 🌌 Escenarios espaciales con animaciones y efectos inmersivos.
+- 🏆 Sistema de puntuación y progresión del jugador.
 
-## Instrucciones de compilación y ejecución
+---
+
+## 🧠 Tecnologías Utilizadas
+
+### 🔹 Desarrollo principal
+
+El proyecto está desarrollado principalmente en **C#**, aprovechando las ventajas del ecosistema .NET para crear una arquitectura limpia, mantenible y escalable.
+
+### 🔹 Programación Orientada a Objetos (OOP)
+
+Implementación basada en principios de:
+
+- Encapsulación
+- Herencia
+- Polimorfismo
+- Separación de responsabilidades
+
+Esto permite una mejor organización de entidades como naves, enemigos, proyectiles y sistemas de juego.
+
+### 🔹 Motor gráfico e interfaz
+
+Uso de tecnologías gráficas y componentes de interfaz para:
+
+- Renderizado 2D
+- Gestión de sprites y animaciones
+- Entrada de teclado en tiempo real
+- Interfaces visuales y menús interactivos
+
+### 🔹 Gestión de datos
+
+- Almacenamiento de puntuaciones y progreso del jugador.
+- Persistencia simple mediante archivos de texto y serialización.
+
+### 🔹 Arquitectura modular
+
+El código está estructurado por componentes independientes para facilitar:
+
+- Escalabilidad
+- Reutilización
+- Mantenimiento
+- Incorporación de nuevas mecánicas
+
+---
+
+## 🛠️ Tecnologías y Herramientas
+
+- 💻 **C# / .NET**
+- 🎮 Desarrollo de videojuegos 2D
+- 🧩 Programación orientada a objetos
+- 🖼️ Renderizado gráfico y animaciones
+- 📂 Gestión de archivos y persistencia de datos
+- 🔧 Visual Studio
+
+---
+
+## ▶️ Compilación y Ejecución
 
 1. Clona este repositorio en tu máquina local.
-2. Abre el proyecto en el IDE de C++ y compila el código fuente principal.
-3. Ejecuta el ejecutable generado para comenzar el juego.
+2. Abre la solución en **Visual Studio**.
+3. Compila el proyecto en modo `Debug` o `Release`.
+4. Ejecuta la aplicación y comienza la batalla espacial.
 
-## Contribuciones
+---
 
-¡Contribuciones son bienvenidas!
+## 🤝 Contribuciones
 
-Si eres un entusiasta de los juegos y te apasionan los desafíos espaciales, ¡únete a nosotros y contribuye en el desarrollo de Space Invaders! Estamos emocionados de recibir nuevas ideas, mejoras y correcciones de errores para hacer de este juego una experiencia aún más emocionante.
+¡Las contribuciones son bienvenidas!
 
-## Licencia
+Si te apasiona el desarrollo de videojuegos en C# y quieres colaborar en nuevas funcionalidades, optimización de código o mejoras visuales, no dudes en participar en el proyecto.
 
-Proyecto personal - Todos los derechos reservados.
+---
 
-Este es un proyecto personal y no se proporciona ninguna licencia explícita para su uso, distribución o modificación. Todos los derechos sobre el código, diseño y contenido del proyecto están reservados por el autor.
+## 📜 Licencia
 
-El propósito de compartir este repositorio en GitHub es con fines educativos y para mostrar el código y las habilidades utilizadas en el desarrollo del juego de naves espaciales.
+Proyecto personal — Todos los derechos reservados.
 
-Si tienes interés en colaborar o utilizar parte del código para tus proyectos personales, por favor contáctame para obtener el permiso correspondiente.
+Este repositorio se comparte con fines educativos y como muestra de habilidades de desarrollo de videojuegos y programación en C#.
 
-¡Gracias por tu comprensión y apoyo!
+---
 
-## Miembros
+## 👨‍💻 Contacto
 
-ijmgithub@gmail.com
-ivan.jaraiz@gmail.com
+- ijmgithub@gmail.com
 
-## GitLab
+---
 
-[Visita el repositorio de GitLab](https://gitlab.com/ijmGitlab)
+## 🌐 GitLab
 
-## Otros proyectos
+[Repositorio en GitLab](https://gitlab.com/ijmGitlab)
 
-- [Jungle Adventure](https://github.com/ijmGithub/selvaAdventureGame): la emocionante aventura en la selva, donde te enfrentarás a desafíos y peligros en cada paso. Explora un mundo misterioso lleno de 
-criaturas exóticas, tesoros ocultos y emocionantes acertijos.
-- [BytesAndPuzzles](https://gitlab.com/ijmGitlab/bytesandpuzzles): Juego de Comunicaciones Juego de Comunicaciones, donde te enfrentarás a emocionantes desafíos y aventuras relacionados con los 
-protocolos de comunicación UART, SPI e I2C.
+---
+
+## 🎮 Otros Proyectos
+
+- [Jungle Adventure](https://github.com/ijmGithub/selvaAdventureGame)  
+  Juego de aventuras ambientado en la selva con exploración, enemigos y acertijos.
+
+- [BytesAndPuzzles](https://gitlab.com/ijmGitlab/bytesandpuzzles)  
+  Videojuego educativo centrado en protocolos de comunicación UART, SPI e I2C mediante desafíos interactivos.
