@@ -1,0 +1,95 @@
+<UserControl x:Class="SpaceInvadersGame.Views.GameView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SpaceInvadersGame.ViewModels"
+             xmlns:helpers="clr-namespace:SpaceInvadersGame.Helpers"
+             mc:Ignorable="d"
+             d:DesignHeight="700" d:DesignWidth="820">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+            <TextBlock Text="Vidas:" FontWeight="Bold" Foreground="White" />
+            <TextBlock Text=" " />
+            <TextBlock Text="{Binding Player.Lives}" Foreground="White" />
+            <TextBlock Text="    " />
+            <TextBlock Text="Puntos:" FontWeight="Bold" Foreground="White" />
+            <TextBlock Text=" " />
+            <TextBlock Text="{Binding Player.Score}" Foreground="White" />
+            <TextBlock Text="    " />
+            <TextBlock Text="Estado:" FontWeight="Bold" Foreground="White" />
+            <TextBlock Text="{Binding StatusMessage}" Foreground="White" />
+        </StackPanel>
+
+        <Border Grid.Row="1" Margin="10" Background="#FF0B1222" BorderBrush="Gray" BorderThickness="2" ClipToBounds="True">
+            <Grid>
+                <Canvas Width="800" Height="600" helpers:InputServiceBehavior.InputService="{Binding InputService}">
+                    <ItemsControl ItemsSource="{Binding Enemies}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left" Value="{Binding X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Width="{Binding Width}" Height="{Binding Height}" Fill="LightGreen" Stroke="White" StrokeThickness="2" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ItemsControl ItemsSource="{Binding Projectiles}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Canvas />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                        <Style TargetType="ContentPresenter">
+                            <Setter Property="Canvas.Left" Value="{Binding X}" />
+                            <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Width="{Binding Width}" Height="{Binding Height}" Fill="Yellow" Stroke="Orange" StrokeThickness="1" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <ContentControl Content="{Binding Player}"
+                                Canvas.Left="{Binding Player.X}"
+                                Canvas.Top="{Binding Player.Y}">
+                    <ContentControl.Template>
+                        <ControlTemplate>
+                            <Rectangle Width="{Binding Width}" Height="{Binding Height}" Fill="DodgerBlue" Stroke="White" StrokeThickness="2" />
+                        </ControlTemplate>
+                    </ContentControl.Template>
+                </ContentControl>
+            </Canvas>
+                <Border Background="#AA000000" Visibility="{Binding ShowEndGameMessage, Converter={StaticResource BoolToVis}}">
+                    <TextBlock Text="{Binding StatusMessage}" Foreground="White" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" Width="720" />
+                </Border>
+            </Grid>
+        </Border>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Start" Command="{Binding StartGameCommand}" Width="100" Margin="4" />
+            <Button Content="Pause" Command="{Binding PauseGameCommand}" Width="100" Margin="4" />
+        </StackPanel>
+    </Grid>
+</UserControl>

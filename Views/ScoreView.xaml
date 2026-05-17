@@ -1,0 +1,17 @@
+<UserControl x:Class="SpaceInvadersGame.Views.ScoreView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid Background="#FF0B1222">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Puntuación actual" FontSize="28" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 8" />
+            <TextBlock Text="{Binding CurrentScore}" FontSize="40" FontWeight="Bold" Foreground="LightGreen" HorizontalAlignment="Center" Margin="0 0 0 20" />
+            <TextBlock Text="Récord de puntuación" FontSize="28" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0 0 0 8" />
+            <TextBlock Text="{Binding HighScore}" FontSize="40" FontWeight="Bold" Foreground="Yellow" HorizontalAlignment="Center" Margin="0 0 0 20" />
+            <TextBlock Text="Los mejores jugadores de la galaxia." FontSize="18" Foreground="LightGray" TextAlignment="Center" Width="520" />
+        </StackPanel>
+    </Grid>
+</UserControl>
