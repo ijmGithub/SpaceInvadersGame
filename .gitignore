@@ -1,0 +1,59 @@
+# Build
+bin/
+obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+packages/
+
+# Generated files
+Generated_Code/
+
+# Publish output
+publish/
+
+# Test results
+TestResults/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# JetBrains Rider
+*.sln.iml
+
+# .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# WPF generated
+*.g.cs
+*.g.i.cs
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
